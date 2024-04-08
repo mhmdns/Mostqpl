@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191A1F;
+}
+.container {
+  width: 80%;
+  margin: auto;
+} 
+@media screen and (max-width: 600px) {   .container {     
+  width: 100%;   
+} 
+}
+.ime{
+  width: 100%;
+  margin-top: 7vh;
+}
+
+.header {
+  background: #191A1F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+}
+
+.header .logo {
+  height: 90%; /* تحديد ارتفاع الشعار */
+}
+@font-face {
+  font-family: "TajawalBold"; 
+  src: url("tajawalbold.ttf") format("truetype"); 
+}
+@font-face {
+  font-family: "TajawalRegular"; 
+  src: url("tajawalregular.ttf") format("truetype"); 
+}
+.bo{
+  text-decoration: none;
+}
+.bt{
+  background: #16CE92;
+  border: 0;
+  color: #ffff;
+  height: 6vh;
+  font-size: 5vw;
+  font-family: "TajawalRegular", sans-serif;
+  border: 2px solid #16CE92;
+  border-radius: 80px; 
+  padding-right: 20px;
+  text-align: left center;
+  background-image: url('inbox.png');
+  background-size: cover;
+  background-position: right center; 
+  background-size: 5vw 5vw;
+  background-repeat: no-repeat;
+  line-height: 20px;
+}
+.bn{
+  margin-right: 20;
+  padding-left:20px;
+}
+.bu{
+  margin-right: 10;
+  padding-left:10px;
+}
+.dt{
+  color: #fff;
+  margin-right:20;
+ font-family: "TajawalBold", sans-serif;
+ font-size: 6vw;
+}
+
+.about .app {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 100%;
+}
+
+.stor {
+  background: #202126;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #202126;
+  border-radius: 10px;
+  font-size: 3vw;
+  font-family: "TajawalBold", sans-serif;
+}
+
+.download {
+  direction: rtl;
+  width: 100%;
+}
+
+.div-galry {
+  display: flex;
+  flex-wrap: wrap; /* تمكين العناصر من الانتقال إلى السطر التالي إذا كانت الشاشة ضيقة */
+  justify-content: center;
+}
+
+.galry {
+  width: calc(33.33% - 20px); /* تحديد عرض الصور بنسبة 33.33% مع هامش 10 بكسل بين كل صورة */
+  margin: 10px;
+  animation: moveLeft 4s linear infinite;
+  border: 2px solid #202126;
+  border-radius: 10px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.title-text{
+  direction: rtl;
+  font-family: "TajawalBold", sans-serif;
+}
+.title-text h2{
+  color: #fff;
+  margin-right:20;
+  margin-top: 40;
+}
+.ledar{
+  margin: 20;
+  align-items: center;
+}
+.border{
+  padding: 30;
+  border: 2px solid #263238;
+  border-radius: 10px;
+  background: #1F222B;
+  text-align: center;
+  margin-top: 10;
+  margin-bottom: 10;
+}
+.tdec{
+  color: #ffff;
+  font-family: "TajawalBold", sans-serif;
+  margin: 20;
+}
+.dec{
+  font-family: "TajawalRegular", sans-serif;
+  color: #b0bec5;
+}
